@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcalator</title>
+    <link rel="stylesheet" href="calcalator.css">
+</head>
+<body>
+     
+        <div class="container">
+            <div type="text" id="showNumber" class="cal-display input" ></div>
+            <div class="cal-keys">
+                <div class="cal-row">
+                    <button class="num" onclick="getNumber('7')"> 7</button>
+                    <button class="num" onclick="getNumber('8')"> 8</button>
+                    <button class="num" onclick="getNumber('9')"> 9</button>
+                    <button class="op btn-blue" onclick="getOperation('+')"> +</button>
+                </div>
+                <div class="cal-row">
+                    <button class="num" onclick="getNumber('4')"> 4</button>
+                    <button class="num" onclick="getNumber('5')"> 5</button>
+                    <button class="num" onclick="getNumber('6')"> 6</button>
+                    <button class="op btn-blue" onclick="getOperation('-')"> -</button>
+                </div>
+                <div class="cal-row">
+                    <button class="num" onclick="getNumber('1')"> 1</button>
+                    <button class="num" onclick="getNumber('2')"> 2</button>
+                    <button class="num" onclick="getNumber('3')"> 3</button>
+                    <button class="btn-blue op " onclick="getOperation('*')"> *</button>
+                </div>
+                <div class="cal-row">
+                    <button class="num" onclick="getNumber('0')"> 0</button>
+                    <button class="num" onclick="dot()">.</button>
+                    <button class="btn-blue " onclick="back()">←</button>
+                    <button class="op btn-blue" onclick="getOperation('/')"> /</button>
+                   
+                </div>
+                <div class="cal-row">
+                    <button class="btn-equal" onclick="getResult()"> = </button>
+                    <button class="btn-blue " onclick="reset()">C</button>
+                     
+                </div>
+            </div>
+        </div>
+ 
+  
+    
+  
+    <script src="calcalator.js" defer></script>
+</body>
+</html>
